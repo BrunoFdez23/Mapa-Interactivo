@@ -17,3 +17,53 @@ function ocultarCuadroTexto() {
     cuadroTexto.style.display = 'none';
 }
 
+var contenedor = document.getElementById('main_container');
+var zoomable = document.getElementById('mapa_int');
+
+var escala = 1;
+var offsetX = 0;
+var offsetY = 0;
+var dragging = false;
+
+contenedor.addEventListener('wheel', function (e) {
+  e.preventDefault();
+
+  var delta = e.deltaY || e.detail || e.wheelDelta;
+
+  if (delta > 0) {
+    escala -= 0.1;
+  } else {
+    escala += 0.1;
+  }
+
+  escala = Math.min(Math.max(escala, 0.5), 2);
+
+  zoomable.style.transform = 'scale(' + escala + ')';
+});
+
+zoomable.addEventListener('mousedown', function (e) {
+  e.preventDefault();
+  dragging = true;
+  offsetX = e.clientX - zoomable.getBoundingClientRect().left;
+  offsetY = e.clientY - zoomable.getBoundingClientRect().top;
+  zoomable.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', function (e) {
+  if (dragging) {
+    var x = e.clientX - offsetX;
+    var y = e.clientY - offsetY;
+
+    // Ajustar la posición para que no se salga del contenedor
+    x = Math.min(Math.max(x, 0), contenedor.clientWidth - zoomable.clientWidth);
+    y = Math.min(Math.max(y, 0), contenedor.clientHeight - zoomable.clientHeight);
+
+    zoomable.style.left = x + 'px';
+    zoomable.style.top = y + 'px';
+  }
+});
+
+document.addEventListener('mouseup', function () {
+  dragging = false;
+  zoomable.style.cursor = 'grab';
+});
