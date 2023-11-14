@@ -1,5 +1,7 @@
 
-
+body{
+    z-index: 2;
+}
 .map, .edificios{
     place-content: center center;
     display: flex;
@@ -12,7 +14,7 @@
 
 #cuadroTexto {
     display: none;
-      position: absolute;
+      position: fixed;
       background-color: #f9f9f9;
       padding: 10px;
       border: 1px solid #ddd;
@@ -20,5 +22,14 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin: 0px;
       width: 13%;
+      z-index: 3;
   }
 
+  #main_container{
+    overflow: hidden;
+    z-index: 1;
+  }
+  #zoomIn, #zoomOut, #restaurar {
+    cursor: pointer;
+    margin-top: 10px;
+}
