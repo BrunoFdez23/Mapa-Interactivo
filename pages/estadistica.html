@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Reciclaje</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('Others/cambio.jpg'); 
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #922B21;
+        }
+
+        #chart-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .chart {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            font-size: 24px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        #info-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .info {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(146, 43, 33, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Estadísticas de Reciclaje</h1>
+
+    <div id="chart-container">
+        <div class="chart" id="plastic-chart"></div>
+        <div class="chart" id="paper-chart"></div>
+        <div class="chart" id="organic-chart"></div>
+        <div class="chart" id="aluminum-chart"></div>
+        <div class="chart" id="hard-recycle-chart"></div>
+    </div>
+
+    <div id="info-container">
+        <div class="info" id="plastic-info"></div>
+        <div class="info" id="paper-info"></div>
+        <div class="info" id="organic-info"></div>
+        <div class="info" id="aluminum-info"></div>
+        <div class="info" id="hard-recycle-info"></div>
+    </div>
+
+    <script>
+        function getRandomPercentage() {
+            return (Math.random() * 100).toFixed(2);
+        }
+
+        function updateData() {
+            document.getElementById('plastic-chart').innerText = getRandomPercentage() + '%';
+            document.getElementById('paper-chart').innerText = getRandomPercentage() + '%';
+            document.getElementById('organic-chart').innerText = getRandomPercentage() + '%';
+            document.getElementById('aluminum-chart').innerText = getRandomPercentage() + '%';
+            document.getElementById('hard-recycle-chart').innerText = getRandomPercentage() + '%';
+
+            document.getElementById('plastic-info').innerHTML = '<strong>Desechos Plásticos:</strong><br>Los desechos plásticos provocan daño ambiental al contaminar agua y suelo, y contribuyen al cambio climático al emitir gases tóxicos durante su producción y descomposición, además de la liberación de carbono al ser incinerados.';
+            document.getElementById('paper-info').innerHTML = '<strong>Desechos de Papel:</strong><br>Los desechos de papel generan daño ambiental al implicar la tala de árboles para su producción, contribuir a la deforestación, y descomponerse en vertederos emitiendo metano, un gas de efecto invernadero. Además, su fabricación también implica un consumo considerable de agua y energía.';
+            document.getElementById('organic-info').innerHTML = '<strong>Desechos Orgánicos:</strong><br>Los desechos orgánicos, como restos de comida, generan daño ambiental al descomponerse en vertederos y liberar metano, un gas de efecto invernadero. Sin embargo, su gestión adecuada a través del compostaje puede mitigar estos impactos y contribuir a la sostenibilidad ambiental.';
+            document.getElementById('aluminum-info').innerHTML = '<strong>Desechos de Aluminio:</strong><br>Los desechos de aluminio tienen un impacto ambiental significativo, ya que su producción implica la extracción intensiva de recursos naturales y una gran cantidad de energía. El reciclaje del aluminio es crucial, ya que reduce la necesidad de extracción y procesamiento de materias primas.';
+            document.getElementById('hard-recycle-info').innerHTML = '<strong>Desechos de Difícil Reciclaje:</strong><br>Los desechos de difícil reciclaje, como productos electrónicos, presentan desafíos ambientales debido a su complejidad de descomposición y liberación de sustancias tóxicas. Su gestión inadecuada puede acumular contaminantes y desperdiciar recursos valiosos.';
+        }
+
+        setInterval(updateData, 120000);
+
+        updateData();
+    </script>
+</body>
+</html>
