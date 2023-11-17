@@ -6,10 +6,8 @@ function mostrarCuadroTexto(texto, imagen) {
     textoCuadro.innerHTML = texto;
     imagenCuadro.src = imagen;
 
-    cuadroTexto.style.display = 'block';
-
-
-
+    cuadroTexto.style.display = 'block'; 
+    
   }
 
 function ocultarCuadroTexto() {
@@ -20,7 +18,8 @@ function ocultarCuadroTexto() {
 var contenedor = document.getElementById('main_container');
 var zoomable = document.getElementById('mapa_int');
 
-var escala = 1;
+var escalaOriginal = 1;
+var escala = escalaOriginal;
 var offsetX = 0;
 var offsetY = 0;
 var dragging = false;
@@ -31,7 +30,10 @@ contenedor.addEventListener('wheel', function (e) {
   var delta = e.deltaY || e.detail || e.wheelDelta;
 
   if (delta > 0) {
-    escala -= 0.1;
+    
+    if (escala > escalaOriginal) {
+      escala -= 0.1;
+    }
   } else {
     escala += 0.1;
   }
@@ -54,7 +56,7 @@ document.addEventListener('mousemove', function (e) {
     var x = e.clientX - offsetX;
     var y = e.clientY - offsetY;
 
-    // Ajustar la posición para que no se salga del contenedor
+    
     x = Math.min(Math.max(x, 0), contenedor.clientWidth - zoomable.clientWidth);
     y = Math.min(Math.max(y, 0), contenedor.clientHeight - zoomable.clientHeight);
 
