@@ -13,8 +13,8 @@ body{
 }
 
 #cuadroTexto {
-    display: none;
-      position: fixed;
+      display: none;
+      position: absolute;
       background-color: #f9f9f9;
       padding: 10px;
       border: 1px solid #ddd;
@@ -23,13 +23,19 @@ body{
       margin: 0px;
       width: 13%;
       z-index: 3;
+      bottom: 0px;
   }
 
   #main_container{
     overflow: hidden;
     z-index: 1;
+    
   }
   #zoomIn, #zoomOut, #restaurar {
     cursor: pointer;
     margin-top: 10px;
+}
+
+.container{
+    position: relative;
 }
