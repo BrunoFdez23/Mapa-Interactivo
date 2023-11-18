@@ -26,7 +26,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Otros</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="pages/Mp_BotesR.html">Botes De Reciclaje</a></li>
+                            
                             <li><a class="dropdown-item" href="pages/estadistica.html">Estadistica De Residuos</a></li>
                             <li><hr class="dropdown-divider" /></li>
                             <li><a class="dropdown-item" href="Others/Infografias.pdf">Infografias</a></li>
@@ -284,7 +284,7 @@
                         <path onclick="mostrarCuadroTexto('Aula amplia 2')" ondblclick="ocultarCuadroTexto()" d="M4600 4929 l0 -31 -160 7 -160 7 0 -112 0 -112 368 7 c202 4 370 9
                         375 12 4 2 7 49 7 104 l0 99 -32 0 c-18 0 -80 -7 -138 -15 -162 -22 -160 -22
                         -160 25 l0 40 -50 0 c-49 0 -50 0 -50 -31z"/>
-                        <path onclick="mostrarCuadroTexto('Cine al aire libre', 'https://thehappening.com/wp-content/uploads/2020/06/cine-al-aire-libre-en-casa.jpg')" ondblclick="ocultarCuadroTexto()" d="M5040 4670 l0 -29 -102 -3 -103 -3 -3 -107 -3 -108 39 0 c22 0 67 -3
+                        <path onclick="mostrarCuadroTexto('Cine al aire libre', ['https://thehappening.com/wp-content/uploads/2020/06/cine-al-aire-libre-en-casa.jpg'], '', false)" ondblclick="ocultarCuadroTexto()" d="M5040 4670 l0 -29 -102 -3 -103 -3 -3 -107 -3 -108 39 0 c22 0 67 -3
                         101 -6 l61 -7 0 -33 0 -34 60 0 60 0 0 30 c0 30 1 30 55 30 l55 0 0 109 c0 60
                         -3 116 -6 125 -4 12 -20 16 -55 16 -46 0 -49 2 -49 25 0 24 -3 25 -55 25 -54
                         0 -55 0 -55 -30z"/>
@@ -295,7 +295,7 @@
                         81 165 142 25 43 27 56 27 147 0 91 -2 104 -27 147 -36 61 -108 123 -165 142
                         -58 20 -174 19 -230 -1z"/>
 
-                        <path onclick="mostrarCuadroTexto('Area para estacionarse', 'https://miituo.com/blog/wp-content/uploads/2022/08/Tips-para-estacionarse-1024x576.webp')" ondblclick="ocultarCuadroTexto()" d="M3776 6839 c-3 -79 -9 -188 -12 -241 l-6 -98 43 0 c24 0 222 -5 439
+                        <path onclick="mostrarCuadroTexto('Area para estacionarse', ['https://miituo.com/blog/wp-content/uploads/2022/08/Tips-para-estacionarse-1024x576.webp'], '', false)" ondblclick="ocultarCuadroTexto()" d="M3776 6839 c-3 -79 -9 -188 -12 -241 l-6 -98 43 0 c24 0 222 -5 439
                         -10 833 -21 1847 -40 2133 -40 l297 0 0 148 c0 82 3 196 6 254 l7 106 -834 6
                         c-459 3 -1111 9 -1450 12 l-617 6 -6 -143z"/>
                         <path onclick="mostrarCuadroTexto('Parada 644 y 615', '')" ondblclick="ocultarCuadroTexto()" d="M7250 6885 l0 -35 205 0 205 0 0 35 0 35 -205 0 -205 0 0 -35z"/>
@@ -397,40 +397,42 @@
 
                     <g class="Botes" transform="translate(0.000000,768.000000) scale(0.100000,-0.100000)"
                         fill="#ee9b57" stroke="none">
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M7053 6375 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje', ['https://cdn-icons-png.flaticon.com/512/1483/1483023.png', 'https://cdn-icons-png.flaticon.com/512/1078/1078566.png'],'Puedes reciclar este tipo de basura', true)" ondblclick="ocultarCuadroTexto()" d="M7053 6375 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M5753 6285 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M5753 6285 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M7563 5715 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M7563 5715 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M6993 5305 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M6993 5305 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M3693 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M3693 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M6193 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M6193 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M6553 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje'),[''],'', true" ondblclick="ocultarCuadroTexto()" d="M6553 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M8903 5215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M8903 5215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M4033 5095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M4033 5095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M9423 4565 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M9423 4565 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M7123 4485 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M7123 4485 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M7913 4265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M7913 4265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M6803 4215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M6803 4215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M7503 4135 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M7503 4135 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M5313 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M5313 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M6323 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M6323 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje')" ondblclick="ocultarCuadroTexto()" d="M3483 4005 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M3483 4005 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M9103 5455 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[''],'', true)" ondblclick="ocultarCuadroTexto()" d="M6453 2825 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
                     </g>
                 </svg>              
                 
@@ -439,8 +441,14 @@
             
             <div id="cuadroTexto" class="cuadroTexto">
                 <p id="textoCuadro"></p>
-                <img id="imagenCuadro" src="" alt="Imagen del cuadro" width="100%" height="100%">
-            </div> 
+                <div id="imagenCuadro"></div>
+                <p id="informacionCuadro"></p>
+            </div>
+            
+            
+
+            
+
                       
         </div>
         
