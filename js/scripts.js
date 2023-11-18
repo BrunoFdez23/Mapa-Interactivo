@@ -1,19 +1,41 @@
-function mostrarCuadroTexto(texto, imagen) {
-    var cuadroTexto = document.getElementById('cuadroTexto');
-    var textoCuadro = document.getElementById('textoCuadro');
-    var imagenCuadro = document.getElementById('imagenCuadro');
+function mostrarCuadroTexto(texto, imagenes, informacionAdicional, bote) {
+  var cuadroTexto = document.getElementById('cuadroTexto');
+  var textoCuadro = document.getElementById('textoCuadro');
+  var imagenCuadro = document.getElementById('imagenCuadro');
+  var informacionCuadro = document.getElementById('informacionCuadro');
 
-    textoCuadro.innerHTML = texto;
-    imagenCuadro.src = imagen;
+  textoCuadro.innerHTML = texto;
+  imagenCuadro.innerHTML = '';
 
-    cuadroTexto.style.display = 'block'; 
-    
+
+  for (var i = 0; i < imagenes.length; i++) {
+      var nuevaImagen = document.createElement('img');
+      nuevaImagen.src = imagenes[i];
+      if(bote==false){
+        nuevaImagen.alt = 'Imagen del cuadro';
+        nuevaImagen.style.width = '100%'; 
+        nuevaImagen.style.height = '100%'; 
+      }else{
+        nuevaImagen.alt = 'Iconos del cuadro';
+        nuevaImagen.style.width = '25%'; 
+        nuevaImagen.style.height = '25%'; 
+      }
+      
+      imagenCuadro.appendChild(nuevaImagen);
   }
+
+
+  informacionCuadro.innerHTML = informacionAdicional;
+
+  cuadroTexto.style.display = 'block';
+}
+
 
 function ocultarCuadroTexto() {
     var cuadroTexto = document.getElementById('cuadroTexto');
     cuadroTexto.style.display = 'none';
 }
+
 
 var contenedor = document.getElementById('main_container');
 var zoomable = document.getElementById('mapa_int');
