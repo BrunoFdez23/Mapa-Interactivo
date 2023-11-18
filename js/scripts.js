@@ -1,3 +1,13 @@
+var img_madera = 'https://cdn-icons-png.flaticon.com/512/3275/3275748.png';
+var img_metal = 'https://www.econtenedores.com/wp-content/uploads/2020/03/metal.png';
+var img_organicos = 'https://www.econtenedores.com/wp-content/uploads/2020/03/organico.png';
+var img_sanitarios = 'https://www.econtenedores.com/wp-content/uploads/2020/03/inorganicos.png';
+var img_dificil_reclaje ='https://www.econtenedores.com/wp-content/uploads/2020/03/inorganico.png'; 
+var img_papel = 'https://www.econtenedores.com/wp-content/uploads/2020/03/papel.png';
+var img_vidrio = 'https://www.econtenedores.com/wp-content/uploads/2020/03/vidrio.png';
+var img_plasticos = 'https://www.econtenedores.com/wp-content/uploads/2020/03/plastico.png';
+var img_inorganicos = img_dificil_reclaje;
+
 function mostrarCuadroTexto(texto, imagenes, informacionAdicional, bote) {
   var cuadroTexto = document.getElementById('cuadroTexto');
   var textoCuadro = document.getElementById('textoCuadro');
@@ -15,17 +25,19 @@ function mostrarCuadroTexto(texto, imagenes, informacionAdicional, bote) {
         nuevaImagen.alt = 'Imagen del cuadro';
         nuevaImagen.style.width = '100%'; 
         nuevaImagen.style.height = '100%'; 
-      }else{
+        
+      }else{        
         nuevaImagen.alt = 'Iconos del cuadro';
         nuevaImagen.style.width = '25%'; 
         nuevaImagen.style.height = '25%'; 
+        
       }
       
       imagenCuadro.appendChild(nuevaImagen);
   }
-
-
   informacionCuadro.innerHTML = informacionAdicional;
+
+  
 
   cuadroTexto.style.display = 'block';
 }
