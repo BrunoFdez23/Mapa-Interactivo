@@ -1,0 +1,38 @@
+#estadisticaCuadro{
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+    
+}
+.progress-circular:after{
+    position: absolute;
+    content: '';
+    width: 65%;
+    height: 65%;
+    border-radius: 55%;
+    background: #f9f9f9;
+    justify-content: center;      
+    align-items: center;  
+}
+
+
+.progress-circular{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+    background: conic-gradient(yellowgreen 30deg,#ededed 0deg);
+    display: flex;      
+    justify-content: center;      
+    align-items: center;             
+
+
+}
+
+.value{
+    font-size: 100%;
+    color: yellowgreen;
+    z-index: 9;
+}
