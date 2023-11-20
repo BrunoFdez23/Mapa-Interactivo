@@ -1,16 +1,16 @@
-var img_madera = 'Images/madera.png';
-var img_metal = 'Images/Metal.png';
-var img_organicos = 'Images/Organicos.png';
-var img_sanitarios = 'Images/sanitarios.png';
-var img_dificil_reclaje ='Images/dificil_reciclaje.png'; 
-var img_papel = 'Images/Papel.png';
-var img_vidrio = 'Images/Vidrio.png';
-var img_plasticos = 'Images/Plasticos.png';
+var img_madera = '../Images/madera.png';
+var img_metal = '../Images/Metal.png';
+var img_organicos = '../Images/Organicos.png';
+var img_sanitarios = '../Images/sanitarios.png';
+var img_dificil_reclaje ='../Images/dificil_reciclaje.png'; 
+var img_papel = '../Images/Papel.png';
+var img_vidrio = '../Images/Vidrio.png';
+var img_plasticos = '../Images/Plasticos.png';
 var img_inorganicos = img_dificil_reclaje;
-var img_construccion = '/Images/.png';
-var img_peligrosos='Images/Peligrosos.png';
-var img_unicel='Images/Unicel.png';
-var img_textiles='Images/Textiles.png';
+var img_construccion = '../Images/.png';
+var img_peligrosos='../Images/Peligrosos.png';
+var img_unicel='../Images/Unicel.png';
+var img_textiles='../Images/Textiles.png';
 
 function getRandomPercentage() {
   return (Math.random() * 100).toFixed(2);
@@ -36,7 +36,8 @@ function mostrarCuadroTexto(texto, imagenes, informacionAdicional, bote) {
       if(bote==false){
         nuevaImagen.alt = 'Imagen del cuadro';
         nuevaImagen.style.width = '100%'; 
-        nuevaImagen.style.height = '100%'; 
+        nuevaImagen.style.height = '90%'; 
+        document.getElementById("imagenCuadro").href = "https://www.google.com.mx/maps/place/CUTONALA+Centro+Universitario+de+Tonal%C3%A1+-+UDG/@20.5664097,-103.2286777,217m/data=!3m1!1e3!4m14!1m7!3m6!1s0x842f4b24202abe73:0xd33161e2e4345862!2sCUTONALA+Centro+Universitario+de+Tonal%C3%A1+-+UDG!8m2!3d20.5666667!4d-103.2286111!16s%2Fg%2F12hy9f77n!3m5!1s0x842f4b24202abe73:0xd33161e2e4345862!8m2!3d20.5666667!4d-103.2286111!16s%2Fg%2F12hy9f77n?entry=ttu";
         
       }else{ 
         
@@ -44,7 +45,7 @@ function mostrarCuadroTexto(texto, imagenes, informacionAdicional, bote) {
         nuevaImagen.style.width = '25%'; 
         nuevaImagen.style.height = '25%';           
         cuadroEstadistica.style.display = 'block';
-        
+        document.getElementById("imagenCuadro").href = "Others/Infografias.pdf";
       }
       imagenCuadro.appendChild(nuevaImagen);  
   }
