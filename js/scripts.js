@@ -1,12 +1,16 @@
-var img_madera = 'https://cdn-icons-png.flaticon.com/512/3275/3275748.png';
-var img_metal = 'https://www.econtenedores.com/wp-content/uploads/2020/03/metal.png';
-var img_organicos = 'https://www.econtenedores.com/wp-content/uploads/2020/03/organico.png';
-var img_sanitarios = 'https://www.econtenedores.com/wp-content/uploads/2020/03/inorganicos.png';
-var img_dificil_reclaje ='https://www.econtenedores.com/wp-content/uploads/2020/03/inorganico.png'; 
-var img_papel = 'https://www.econtenedores.com/wp-content/uploads/2020/03/papel.png';
-var img_vidrio = 'https://www.econtenedores.com/wp-content/uploads/2020/03/vidrio.png';
-var img_plasticos = 'https://www.econtenedores.com/wp-content/uploads/2020/03/plastico.png';
+var img_madera = '../Images/madera.png';
+var img_metal = '../Images/Metal.png';
+var img_organicos = '../Images/Organicos.png';
+var img_sanitarios = '../Images/sanitarios.png';
+var img_dificil_reclaje ='../Images/dificil_reciclaje.png'; 
+var img_papel = '../Images/Papel.png';
+var img_vidrio = '../Images/Vidrio.png';
+var img_plasticos = '../Images/Plasticos.png';
 var img_inorganicos = img_dificil_reclaje;
+var img_construccion = '../Images/.png';
+var img_peligrosos='../Images/Peligrosos.png';
+var img_unicel='../Images/Unicel.png';
+var img_textiles='../Images/Textiles.png';
 
 function getRandomPercentage() {
   return (Math.random() * 100).toFixed(2);
