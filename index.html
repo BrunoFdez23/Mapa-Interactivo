@@ -6,19 +6,20 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Mapa Interactivo del Cutonala</title>
-    <!-- Favicon--> 
+    
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    
     <link href="css/mapa.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/graficos.css" rel="stylesheet" />
     <script src="js/scripts.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Mapa Interactivo del Cutonala</a>
+            <p class="navbar-brand" href="#">Mapa Interactivo del Cutonala</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -304,7 +305,7 @@
                         -10 833 -21 1847 -40 2133 -40 l297 0 0 148 c0 82 3 196 6 254 l7 106 -834 6
                         c-459 3 -1111 9 -1450 12 l-617 6 -6 -143z"/>
                         <path onclick="mostrarCuadroTexto('Parada 644 y 615', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M7250 6885 l0 -35 205 0 205 0 0 35 0 35 -205 0 -205 0 0 -35z"/>
-                        <path onclick="mostrarCuadroTexto('Taller')" ondblclick="ocultarCuadroTexto()" d="M6740 6676 c0 -145 3 -197 13 -203 24 -15 417 4 434 21 2 2 1 87 -3
+                        <path onclick="mostrarCuadroTexto('Taller', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M6740 6676 c0 -145 3 -197 13 -203 24 -15 417 4 434 21 2 2 1 87 -3
                         190 l-7 186 -219 0 -218 0 0 -194z"/>
                         <path onclick="mostrarCuadroTexto('Estacionamiento Cutonala', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M7421 6741 c-177 -105 -171 -99 -171 -187 l0 -72 83 -6 c45 -3 213
                         -11 372 -16 160 -6 414 -17 565 -25 l275 -15 111 -55 c230 -112 436 -273 487
@@ -342,7 +343,7 @@
                         -7 219 -7 285 l0 118 -137 0 -136 0 6 -167z"/>
                         <path onclick="mostrarCuadroTexto('Auditorio', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M3810 4785 l0 -185 119 0 120 0 3 53 3 52 93 3 92 3 0 33 c0 18 -3
                         61 -6 95 l-7 61 -88 0 -89 0 0 35 0 35 -120 0 -120 0 0 -185z"/>
-                        <path onclick="mostrarCuadroTexto('Salones de Nutricion', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M6420 4915 l0 -45 315 0 315 0 0 45 0 45 -315 0 -315 0 0 -45z"/>
+                        <path onclick="mostrarCuadroTexto('Coodinacion', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M6420 4915 l0 -45 315 0 315 0 0 45 0 45 -315 0 -315 0 0 -45z"/>
                         <path onclick="mostrarCuadroTexto('Edificio E', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M8450 4891 c0 -15 -18 -25 -87 -48 -88 -30 -88 -30 -91 -66 -4 -45 0
                         -45 98 -12 86 29 80 29 80 11 0 -11 48 -15 278 -18 l277 -3 71 -37 c101 -52
                         204 -116 236 -146 l28 -26 25 24 c31 30 31 37 -2 72 l-27 28 22 23 c12 13 22
@@ -385,7 +386,7 @@
                         -21 -9 -44 -19z"/>
                         <path onclick="mostrarCuadroTexto('Panel Solar', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M5310 2891 l0 -111 33 0 c17 0 225 -7 461 -15 236 -8 430 -14 431
                         -12 1 1 5 52 9 113 l7 112 -273 6 c-150 3 -362 9 -470 12 l-198 6 0 -111z"/>
-                        <path onclick="mostrarCuadroTexto('Laboratorio de Evaluación y Cuidado del Estado Nutricio')" ondblclick="ocultarCuadroTexto()" d="M7246 2958 c-16 -50 -46 -302 -38 -307 6 -3 168 -26 361 -50 l351
+                        <path onclick="mostrarCuadroTexto('Laboratorio de Evaluación y Cuidado del Estado Nutricio', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M7246 2958 c-16 -50 -46 -302 -38 -307 6 -3 168 -26 361 -50 l351
                         -43 298 57 c163 32 301 61 306 65 4 5 -5 70 -21 147 l-29 138 -612 3 c-485 2
                         -613 0 -616 -10z"/>
                         <path onclick="mostrarCuadroTexto('Edificio', [''], '', false)" ondblclick="ocultarCuadroTexto()" d="M5030 2870 l0 -30 70 0 70 0 0 30 0 30 -70 0 -70 0 0 -30z"/>
@@ -402,44 +403,44 @@
 
                     <g class="Botes" transform="translate(0.000000,768.000000) scale(0.100000,-0.100000)"
                         fill="#ee9b57" stroke="none">
-                        <path onclick="mostrarCuadroTexto('Botes de Reciclaje', [img_papel, img_inorganicos, img_organicos,img_plasticos],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M7053 6375 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Botes de Reciclaje', [img_papel, img_inorganicos, img_organicos,img_plasticos],'Puedes reciclar este tipo de residuos', true), grafica(['papel', 'inorganicos', 'organicos','plasticos'])" ondblclick="ocultarCuadroTexto()" d="M7053 6375 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M5753 6285 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['papel', 'vidrio', 'plasticos', 'dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M5753 6285 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_vidrio, img_metal, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M7563 5715 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_vidrio, img_metal, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['plasticos','vidrio', 'metal', 'dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M7563 5715 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M6993 5305 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['papel', 'metal', 'vidrio', 'plasticos', 'dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M6993 5305 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel,img_organicos, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M3693 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel,img_organicos, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['papel','organicos', 'plasticos', 'dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M3693 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos,img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M6193 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos,img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['plasticos','dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M6193 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_metal],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M6553 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_metal],'Puedes reciclar este tipo de residuos', true), grafica(['papel', 'metal'])" ondblclick="ocultarCuadroTexto()" d="M6553 5265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_vidrio, img_metal, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M8903 5215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_vidrio, img_metal, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['plasticos', 'vidrio', 'metal', 'dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M8903 5215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M4033 5095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['metal', 'vidrio', 'plasticos', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M4033 5095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_metal, img_vidrio, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M9423 4565 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_metal, img_vidrio, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['plasticos', 'metal', 'vidrio', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M9423 4565 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M7123 4485 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['metal', 'vidrio', 'plasticos', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M7123 4485 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos,img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M7913 4265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos,img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['metal', 'vidrio', 'plasticos', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M7913 4265 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_vidrio, img_metal, img_organicos, img_papel, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M6803 4215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_vidrio, img_metal, img_organicos, img_papel, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['plasticos', 'vidrio', 'metal','organicos','papel', 'dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M6803 4215 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_organicos, img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M7503 4135 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_organicos, img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['papel', 'organicos', 'metal', 'vidrio', 'plasticos', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M7503 4135 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M5313 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['metal', 'vidrio', 'plasticos', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M5313 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_organicos, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M6323 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_organicos, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['papel', 'organicos', 'plasticos', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M6323 4095 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_plasticos, img_vidrio, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M3483 4005 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_metal, img_plasticos, img_vidrio, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['metal', 'plasticos', 'vidrio', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M3483 4005 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18
                         38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_papel, img_metal, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M9103 5455 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_organicos, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M6453 2825 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M7823 2985 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
-                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_metal],'Puedes reciclar este tipo de residuos', true)" ondblclick="ocultarCuadroTexto()" d="M7993 2985 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_plasticos, img_papel, img_metal, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['plasticos', 'papel', 'metal', 'Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M9103 5455 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_organicos, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['papel', 'organicos', 'plasticos', 'dificil_reclaje'])" ondblclick="ocultarCuadroTexto()" d="M6453 2825 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_vidrio, img_plasticos, img_dificil_reclaje],'Puedes reciclar este tipo de residuos', true), grafica(['Vidrio','Plasticos','Dificil Reciclaje'])" ondblclick="ocultarCuadroTexto()" d="M7823 2985 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
+                        <path onclick="mostrarCuadroTexto('Bote para Reciclaje',[img_papel, img_metal],'Puedes reciclar este tipo de residuos', true),grafica(['Papel', 'Metal'])" ondblclick="ocultarCuadroTexto()" d="M7993 2985 c-21 -23 -15 -72 15 -114 15 -22 32 -40 37 -40 6 0 22 18 38 40 30 43 35 92 13 115 -19 18 -87 18 -103 -1z"/>
 
                     </g>
                 </svg>              
@@ -453,6 +454,10 @@
                 <p id="informacionCuadro"></p>
             </div>
 
+            <div id="estadisticaCuadro" class="estadisticaCuadro">
+                
+                <canvas id="graficoCircular"></canvas>
+            </div>
                       
         </div>
         
