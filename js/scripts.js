@@ -1,6 +1,6 @@
 var img_madera = 'Images/madera.png';
 var img_metal = 'Images/Metal.png';
-var img_organicos = 'Images/Organicos.png';
+var img_organicos = 'Images/organicos.png';
 var img_sanitarios = 'Images/sanitarios.png';
 var img_dificil_reclaje ='Images/dificil_reciclaje.png'; 
 var img_papel = 'Images/Papel.png';
