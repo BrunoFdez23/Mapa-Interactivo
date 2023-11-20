@@ -8,44 +8,54 @@ var img_vidrio = 'https://www.econtenedores.com/wp-content/uploads/2020/03/vidri
 var img_plasticos = 'https://www.econtenedores.com/wp-content/uploads/2020/03/plastico.png';
 var img_inorganicos = img_dificil_reclaje;
 
+function getRandomPercentage() {
+  return (Math.random() * 100).toFixed(2);
+}
+
+
 function mostrarCuadroTexto(texto, imagenes, informacionAdicional, bote) {
   var cuadroTexto = document.getElementById('cuadroTexto');
+  var cuadroEstadistica = document.getElementById('estadisticaCuadro');
   var textoCuadro = document.getElementById('textoCuadro');
   var imagenCuadro = document.getElementById('imagenCuadro');
   var informacionCuadro = document.getElementById('informacionCuadro');
-
+  
   textoCuadro.innerHTML = texto;
   imagenCuadro.innerHTML = '';
 
-
+  ocultarCuadroTexto();
   for (var i = 0; i < imagenes.length; i++) {
       var nuevaImagen = document.createElement('img');
-      nuevaImagen.src = imagenes[i];
+      nuevaImagen.src = imagenes[i];   
+
+      
       if(bote==false){
         nuevaImagen.alt = 'Imagen del cuadro';
         nuevaImagen.style.width = '100%'; 
         nuevaImagen.style.height = '100%'; 
         
-      }else{        
+      }else{ 
+        
         nuevaImagen.alt = 'Iconos del cuadro';
         nuevaImagen.style.width = '25%'; 
-        nuevaImagen.style.height = '25%'; 
+        nuevaImagen.style.height = '25%';           
+        cuadroEstadistica.style.display = 'block';
         
       }
-      
-      imagenCuadro.appendChild(nuevaImagen);
+      imagenCuadro.appendChild(nuevaImagen);  
   }
-  informacionCuadro.innerHTML = informacionAdicional;
-
   
-
+  informacionCuadro.innerHTML = informacionAdicional; 
   cuadroTexto.style.display = 'block';
+  
 }
 
 
 function ocultarCuadroTexto() {
     var cuadroTexto = document.getElementById('cuadroTexto');
+    var cuadroEstadistica = document.getElementById('estadisticaCuadro');
     cuadroTexto.style.display = 'none';
+    cuadroEstadistica.style.display = 'none';
 }
 
 
@@ -103,3 +113,46 @@ document.addEventListener('mouseup', function () {
   dragging = false;
   zoomable.style.cursor = 'grab';
 });
+
+
+/*------------------*/
+
+   
+    var dt= [];
+    var c = ['#230f2b', '#f21d41', '#ebebbc','#bce3c5','#82b3ae','#a9b79e'];
+    var c2=[];
+    
+    
+    function grafica(e) {
+      dt=[];
+      for(var i = 0; i < e.length; i++){
+        dt[i]=getRandomPercentage();
+        c2[i]=c[i];
+      }
+      
+      var ctx = document.getElementById('graficoCircular').getContext('2d');
+
+      if (window.miGraficoCircular) {
+        window.miGraficoCircular.destroy();        
+        
+      }
+        var datos = {
+            labels: e,
+            datasets: [{
+                data: dt, 
+                backgroundColor: c 
+            }]
+        };
+
+        
+        var opciones = {
+            responsive: true,
+            maintainAspectRatio: false,
+        };        
+
+        window.miGraficoCircular = new Chart(ctx, {
+            type: 'doughnut',
+            data: datos,
+            options: opciones
+        });
+    };
