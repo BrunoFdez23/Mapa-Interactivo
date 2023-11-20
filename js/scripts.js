@@ -1,16 +1,16 @@
-var img_madera = '../Images/madera.png';
-var img_metal = '../Images/Metal.png';
-var img_organicos = '../Images/Organicos.png';
-var img_sanitarios = '../Images/sanitarios.png';
-var img_dificil_reclaje ='../Images/dificil_reciclaje.png'; 
-var img_papel = '../Images/Papel.png';
-var img_vidrio = '../Images/Vidrio.png';
-var img_plasticos = '../Images/Plasticos.png';
+var img_madera = 'Images/madera.png';
+var img_metal = 'Images/Metal.png';
+var img_organicos = 'Images/Organicos.png';
+var img_sanitarios = 'Images/sanitarios.png';
+var img_dificil_reclaje ='Images/dificil_reciclaje.png'; 
+var img_papel = 'Images/Papel.png';
+var img_vidrio = 'Images/Vidrio.png';
+var img_plasticos = 'Images/Plasticos.png';
 var img_inorganicos = img_dificil_reclaje;
-var img_construccion = '../Images/.png';
-var img_peligrosos='../Images/Peligrosos.png';
-var img_unicel='../Images/Unicel.png';
-var img_textiles='../Images/Textiles.png';
+var img_construccion = 'Images/.png';
+var img_peligrosos='Images/Peligrosos.png';
+var img_unicel='Images/Unicel.png';
+var img_textiles='Images/Textiles.png';
 
 function getRandomPercentage() {
   return (Math.random() * 100).toFixed(2);
